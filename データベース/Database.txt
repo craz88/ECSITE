@@ -1,0 +1,82 @@
+﻿# データベースEcsiteの作成
+set names utf8;
+drop database if exists Ecsite;
+create database Ecsite;
+
+# ユーザー rootに、パスワード ecsite を設定し、データベース Ecsite に対するすべての権限を付与
+grant all privileges on Ecsite.* to root@localhost identified by 'ecsite';
+
+# データベース Ecsite を使用する
+use Ecsite;
+
+#  ログインテーブル(Login) の作成
+
+create table Login(
+	Id	int(5),
+	Username	varchar(16),
+	Password 	varchar(50),
+    primary key(Id)
+	);
+
+
+
+# ジャンルテーブル(Category) の作成
+
+create table Category(
+CategoryId  int(14) NOT NULL AUTO_INCREMENT,
+CategoryName  varchar(30),
+primary key(CategoryId)
+);
+
+# メーカテーブル(Maker) の作成
+
+create table Maker(
+MakerId  int(14) NOT NULL auto_increment,
+MakerName varchar(30),
+primary key(MakerId)
+);
+
+# ブランドテーブル(Brand) の作成
+
+create table Brand(
+BrandId  int(14) NOT NULL auto_increment,
+MakerId  int(14),
+BrandName	varchar(30),
+primary key(BrandId)
+);
+
+# 商品テーブル(Product) の作成
+
+create table Product(
+ProductId  int(14) NOT NULL auto_increment,
+CategoryId  int(14),
+MakerId  int(14),
+BrandId  int(14),
+ProductName varchar(30),
+Price    int(30),
+Image	mediumblob,
+Detail	varchar(200),
+primary key(ProductId)
+);
+
+# セールテーブル(Sale) の作成
+
+create table Sale(
+SaleId int(14) NOT NULL auto_increment,
+SaleName   varchar(50),
+Discount    varchar(50),
+StartTime  varchar(40),
+EndTime  varchar(40),
+Attribute varchar(5),
+primary key(SaleId )
+
+);
+
+# セール運用テーブル(SaleOperation) の作成
+
+create table SaleOperation(
+SaleOperationId int(14) NOT NULL AUTO_INCREMENT,
+ProductId  int(14),
+SaleId int(14),
+primary key(SaleOperationId)
+);

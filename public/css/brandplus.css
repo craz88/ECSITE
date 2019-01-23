@@ -1,0 +1,57 @@
+.square_btn {
+    background-color:#376092;
+    height: 60px;
+    width:180px;
+    color:white;
+    font-size:22px;
+}
+
+.square_btn:hover {
+    background: #00bcd4;
+    color: white;
+}
+.mainpart{
+    height: 800px;
+    width:1000px;
+    margin-left: 220px;
+    margin-top: -820px;
+}
+.inputform{
+    margin-top:-100px;
+    width: 270px;
+    margin-right: auto;
+    margin-left: auto;
+      height: 24px;
+    width: 270px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 300px;
+    left: 0;
+    margin: auto;
+}
+
+img{
+    width:30px;
+    height:30px;
+}
+
+h1 {
+    background-color: #dbeef4;
+    color:#17375e;
+}
+
+
+
+.buttons {
+
+    height: 90px;
+    width: 370px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.color{
+    color:red;
+}

@@ -1,0 +1,132 @@
+.menu{
+    height: 800px;
+    width:200px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #376092;
+    border: 1px solid #555;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #a6a6a6;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #a6a6a6;
+    color: white;
+}
+
+.fine{
+    position:absolute;
+     margin-left:720px;
+     margin-top:-20px;
+    background-color:#376092;
+    font-size:20px;
+    color:white;
+}
+
+.box27 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+    margin-top:-10px;
+    height:170px;
+}
+
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.box27 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.bake{
+     position:absolute;
+    background-color:#376092;
+    font-size:20px;
+    color:white;
+    margin-top:-57px;
+}
+
+.bakl{
+     position:absolute;
+    background-color:#376092;
+    font-size:20px;
+    color:white;
+    margin-top:-60px;
+    margin-left:50px;
+}
+
+.bak{
+    width:50px;
+    font-size:20px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:4px 0 4px;
+    color:white;
+    background-color:#376092;
+    border:1px solid #6e6e6e;
+    margin-left:720px;
+    margin-top:-20px;
+    margin-bottom:-28px;
+    height:30px;
+}
+
+
+.mainpart table{
+    margin-top:0px;
+
+    border-collapse: collapse;
+
+}
+.mainpart table, td, th {
+    border: 1px solid black;
+}
+
+.mainpart  td, th{
+    padding: 2px 20px;
+}
+.mainpart  th{
+    background-color: #009BFF;
+    color:white;
+}
+.mainpart  td{
+    background-color: #C2E1F5;
+    
+}
+
+
